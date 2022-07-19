@@ -1,5 +1,8 @@
 const express = require('express');
 const app = express(); 
-console.log(app);
-console.log("holsda");
-console.log("holsda");
+app.listen(3000, ()=>{
+    console.log("Servidor corriendo")
+})
+app.get('/', function(req, res){
+    res.send("Bienvenidos al sitio")
+})
