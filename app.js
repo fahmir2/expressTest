@@ -6,3 +6,4 @@ app.listen(3000, ()=>{
 app.get('/', function(req, res){
     res.send("Bienvenidos al sitio")
 })
+console.log("iupi")
