@@ -1,11 +1,11 @@
 const express = require('express');
 const app = express(); 
+const path = require('path');
+
 app.listen(3000, ()=>{
     console.log("Servidor corriendo")
 })
 app.get('/', function(req, res){
-    res.send("Bienvenidos al sitio")
+    res.sendFile(path.join(__dirname, '/views/index.html'));
 })
-app.get("/home", function(req, res){
-    res.send("Estamos en el home")
-})
+
